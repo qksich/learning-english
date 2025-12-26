@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main-block {
+    width: 30vw;
+    min-width: 400px;
+    margin: auto;
+    margin-top: 300px;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-block .show-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-block .show-block .word {
+    background-color: #dddddd;
+    border-radius: 15px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.main-block .show-block .word span {
+    font-size: 42px;
+    color: #303030;
+}
+
+.main-block .show-block hr {
+    border-top: #dddddd 1px solid;
+    margin: 0 20px;
+}
+
+.main-block .action-block {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.main-block .action-block .show-button {
+    background-color: #2f4e91;
+    &:hover {
+        background-color: #1c356b;
+    }
+}
+
+.main-block .action-block .write-button {
+    background-color: #666baf;
+    &:hover {
+        background-color: #494d8a;
+    }
+}
+
+.main-block .next-button {
+    background-color: #4385b1;
+    &:hover {
+        background-color: #3e7397;
+    }
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    span {
+        color: #ffffff;
+        font-size: 15px;
+    }
+}
+.main-block .show-block .write-block div {
+    width: 100%;
+    display: none;
+    gap: 5%;
+}
+
+.main-block .show-block .write-block input {
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    width: 60%;
+}
+
+.main-block .show-block .write-block input.error { border: 1px red solid; }
+
+.main-block .show-block .write-block button {
+    width: 40%;
+    background-color: #666baf;
+    &:hover { background-color: #494d8a;}
+}
+
+.invisible {
+    opacity: 0;
+}
+
+@media (max-width: 500px) {
+    .main-block {
+        min-width: 300px;
+    }
+}
